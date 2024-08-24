@@ -12,6 +12,7 @@ https://ja.wordpress.org/plugins/contact-form-7/
 https://ja.wordpress.org/plugins/snow-monkey-forms/  
 ブロックエディターで設置できる
 
+<br>
 
 設置後は、メールが届くか確認する
 また、reCaptchaやプラグインでスパム対策をする  
