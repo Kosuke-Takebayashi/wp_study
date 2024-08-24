@@ -44,15 +44,11 @@ https://tcd-theme.com/2023/12/wp-the-content.html
 the_content();
 ```
 
-## 記事一覧
 
-### 投稿日  
 
-### 記事タイトル
+## 記事一覧ページ
+記事一覧、投稿日、記事タイトル、カテゴリーは記事詳細ページと同じ
 
-### カテゴリー
-
-記事詳細ページと同じ
 
 ### ページネーション  
 
@@ -64,8 +60,8 @@ https://www.conoha.jp/lets-wp/wp-pagination/#section07:~:text=box%2Dshadow%3A%20
 $paged = ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1; // ※１
 
 $args = array(
-	'posts_per_page' => 5,
-	'category_name' => 'gallery',
+	// 各パラメータを設定
+  
 	'paged' => $paged, // ここにセットする
 );
 
