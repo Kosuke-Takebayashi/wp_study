@@ -148,5 +148,5 @@ echo esc_url( home_url( '/test-page' ) );
 aタグでリンクを設置するときは次のように使う
 
 ```php
-<a href="<?php echo echo esc_url( home_url( '/test-page' ) ) ?>">
+<a href="<?php echo esc_url( home_url( '/test-page' ) ) ?>">
 ```
