@@ -44,7 +44,7 @@ $category = get_the_category();
   }
 ```
 
-カテゴリーは複数登録できるが、一つ出力する場合が多い  
+カテゴリーは複数登録できるが、一つだけを出力する場合が多い  
 配列の 0 番目を出力している
 
 ### 記事本文
@@ -59,7 +59,7 @@ the_content();
 
 記事一覧、投稿日、記事タイトル、カテゴリーは記事詳細ページと同じ
 
-### ページネーション
+### ★ページネーション
 
 https://www.conoha.jp/lets-wp/wp-pagination/#section07:~:text=box%2Dshadow%3A%20none%3B%0A%7D-,%E5%9B%BA%E5%AE%9A%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%A7%E5%AE%9F%E8%A3%85%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95,-%E5%9B%BA%E5%AE%9A%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AE
 
@@ -80,7 +80,7 @@ $the_query = new WP_Query( $args );
 // ~
 // ループ終了
 
-paginate_links(
+echo paginate_links(
     'total' => $the_query->max_num_pages, // 最大ページ数 $the_queryは上の変数名と合わせる
     'mid_size' => 1, // 現在のページの横にいくつ表示させるか
     'current' => ($paged ? $paged : 1), // 現在ページの番号
@@ -95,11 +95,11 @@ paginate_links(
 ## ＜お問い合わせページ＞
 プラグインで対応する
 
-### Contact Form 7
+### ★Contact Form 7
 https://ja.wordpress.org/plugins/contact-form-7/  
 コードを書いて自由に設置できる
 
-### Snow monkey forms
+### ★Snow monkey forms
 https://ja.wordpress.org/plugins/snow-monkey-forms/  
 ブロックエディターで設置できる
 
@@ -107,7 +107,7 @@ https://ja.wordpress.org/plugins/snow-monkey-forms/
 ## ＜実績紹介ページ＞
 例えば、製品一つ一つを紹介するページでは、管理画面を少しカスタマイズする必要がある
 
-### カスタム投稿タイプ
+### ★カスタム投稿タイプ
 製品を登録するためのカスタム投稿タイプを作り、そこに製品を登録していく
 
 プラグインで実装する
@@ -115,7 +115,7 @@ https://ja.wordpress.org/plugins/snow-monkey-forms/
 https://ja.wordpress.org/plugins/custom-post-type-ui/
 
 
-### カスタムフィールド
+### ★カスタムフィールド
 登録したそれぞれの製品に対して、情報を管理画面から追加するために必要  
 - 値段
 - 発売日
