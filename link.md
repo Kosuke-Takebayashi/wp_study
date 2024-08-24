@@ -11,7 +11,7 @@ echo esc_url( home_url( '/test-page' ) );
 // https://example.com/test-page
 ```
 
-a タグで各ページへのリンクは次のように書く
+各ページへのリンクは、次のように書く
 
 ```php
 <a href="<?php echo esc_url( home_url( '/test-page' ) ) ?>">

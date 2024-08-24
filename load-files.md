@@ -17,7 +17,7 @@ function my_scripts() {
 例えば、トップページでテーマフォルダ直下にある style.css を読み込みたい時は以下のようになる
 
 ```php
-unction enqueue_my_custom_styles() {
+function enqueue_my_custom_styles() {
     if (is_front_page() || is_home()) {
         wp_enqueue_style('my-style', get_stylesheet_uri());
     }
@@ -54,7 +54,8 @@ if(is_page() || is_single()) {
 ```
 
 <br>
-例えば、以下のような構成の場合
+例えば、以下のような構成の場合  
+
 - ヘッダーなどの全ページで共通のCSS・・・common.css、
 - トップページ・・・style.css
 - お問い合わせページ・・・contact.css
