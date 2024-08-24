@@ -5,6 +5,7 @@
 -   お問い合わせページ
 -   実績紹介ページ
 -   リンクの設置方法
+-   CSSやJSファイルの読み込み方法
 
 <br>
 
@@ -153,3 +154,20 @@ aタグでリンクを設置するときは次のように使う
 ```php
 <a href="<?php echo esc_url( home_url( '/test-page' ) ) ?>">
 ```
+
+<br>
+
+## ＜CSSやJSファイルの読み込み方法＞
+linkタグに直接書くのではなく、functions.phpから読み込ませる
+「wp_enqueue_scripts」にフックさせる
+
+```php
+function my_scripts() { 
+     // linkタグ内に出力
+     wp_enqueue_script( 'my-script', 'main.js', '', '1.0.0', false );
+ }
+ add_action('wp_enqueue_scripts', 'my_scripts');
+```
+
+
+
