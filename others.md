@@ -12,6 +12,7 @@ title タグは、header.php に直接書かないほうがよい
 
 
 ### add_theme_support('title-tag')を使う
+以下を書くことで、自動で出力してくれる
 ```php
 // functions.phpに書く
 function my_theme_setup() {
