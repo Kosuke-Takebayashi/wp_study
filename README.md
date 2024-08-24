@@ -3,7 +3,7 @@
 - 記事一覧ページ
 - 記事詳細ページ
 
-## 記事詳細ページ
+## <p style="color: blue; background-color: white;">記事詳細ページ</p>
 
 ### 記事タイトル
 
@@ -61,7 +61,7 @@ $paged = ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1; 
 
 $args = array(
 	// 各パラメータを設定
-  
+
 	'paged' => $paged, // ここにセットする
 );
 
