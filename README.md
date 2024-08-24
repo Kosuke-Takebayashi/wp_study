@@ -55,6 +55,8 @@ https://tcd-theme.com/2023/12/wp-the-content.html
 the_content();
 ```
 
+<br>
+
 ## ＜記事一覧ページ＞
 
 記事一覧、投稿日、記事タイトル、カテゴリーは記事詳細ページと同じ
@@ -92,6 +94,9 @@ echo paginate_links(
 ページによって実装方法が少し異なるので注意  
 ※１を忘れがちなので注意
 
+<br>
+
+
 ## ＜お問い合わせページ＞
 プラグインで対応する
 
@@ -103,6 +108,7 @@ https://ja.wordpress.org/plugins/contact-form-7/
 https://ja.wordpress.org/plugins/snow-monkey-forms/  
 ブロックエディターで設置できる
 
+<br>
 
 ## ＜実績紹介ページ＞
 例えば、製品一つ一つを紹介するページでは、管理画面を少しカスタマイズする必要がある
@@ -113,7 +119,6 @@ https://ja.wordpress.org/plugins/snow-monkey-forms/
 プラグインで実装する
 #### Custom Post Type UI
 https://ja.wordpress.org/plugins/custom-post-type-ui/
-
 
 ### ★カスタムフィールド
 登録したそれぞれの製品に対して、情報を管理画面から追加するために必要  
