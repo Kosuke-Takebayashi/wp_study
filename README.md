@@ -182,6 +182,7 @@ function my_scripts() {
  }
  add_action('wp_enqueue_scripts', 'my_scripts');
 ```
+<br>
 
 ページを限定して読み込むことができる  
 例えば、トップページでテーマフォルダ直下にある style.css を読み込みたい時は以下のようになる
@@ -194,7 +195,7 @@ unction enqueue_my_custom_styles() {
 }
 add_action('wp_enqueue_scripts', 'enqueue_my_custom_styles');
 ```
-
+<br>
 その他にも、以下のようなページを限定する関数が用意されている
 
 ```php
