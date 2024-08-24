@@ -15,19 +15,7 @@
 
 <br>
 
-## ＜お問い合わせページ＞
 
-プラグインで対応する
-
-### ★Contact Form 7
-
-https://ja.wordpress.org/plugins/contact-form-7/  
-コードを書いて自由に設置できる
-
-### ★Snow monkey forms
-
-https://ja.wordpress.org/plugins/snow-monkey-forms/  
-ブロックエディターで設置できる
 
 <br>
 
