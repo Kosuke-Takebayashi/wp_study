@@ -1,4 +1,4 @@
-## title タグ
+## ＜title タグ＞
 
 title タグは、header.php に直接書かないほうがよい
 
