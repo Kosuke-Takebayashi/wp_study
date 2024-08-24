@@ -222,3 +222,28 @@ if(is_page() || is_single()) {
 // その他、さまざまなページ指定ができる
 
 ```
+例えば、以下のような構成の場合
+- ヘッダーなどの全ページで共通のCSS・・・common.css、
+- トップページ・・・style.css
+- お問い合わせページ・・・contact.css
+
+次のようなコードになる、
+
+```php
+function enqueue_my_custom_styles() {
+    // 共通のCSSを全ページで読み込む
+    wp_enqueue_style('common-style', get_template_directory_uri() . '/assets/css/common.css');
+
+    // トップページのみでstyle.cssを読み込む
+    if (is_front_page() || is_home()) {
+        wp_enqueue_style('front-page-style', get_template_directory_uri() . '/style.css');
+    }
+
+    // お問い合わせページ（例: slugが'contact'であるページ）でcontact.cssを読み込む
+    if (is_page('contact')) {
+        wp_enqueue_style('contact-page-style', get_template_directory_uri() . '/assets/css/contact.css');
+    }
+}
+add_action('wp_enqueue_scripts', 'enqueue_my_custom_styles');
+
+```
