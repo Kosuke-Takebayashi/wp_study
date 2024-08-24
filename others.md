@@ -6,7 +6,9 @@ title タグは、header.php に直接書かないほうがよい
 
 -   add_theme_support('title-tag')を使う
 -   SEO プラグインを導入する  
-    上のどちらかで対応する
+<br>
+
+上のどちらかで対応する
 
 <br>
 
